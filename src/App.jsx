@@ -1,7 +1,9 @@
+import NavBar from "./components/NavBar/NavBar";
+
 function App() {
   return (
     <>
-      <h1>Initial Setup</h1>
+      <NavBar />
     </>
   );
 }
