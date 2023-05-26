@@ -1,0 +1,40 @@
+.Main{
+    text-align: center;
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    & p{
+        margin-bottom: 24px;
+    }
+
+}
+
+.Funcionality{
+    text-align: left;
+    margin-bottom: 48px;
+
+    & span{
+        background-color: var(--Bright-Red);
+        color: var(--Very-Light-Gray);
+        padding: 6px 22px;
+        border-radius: 1rem;
+        font-weight: 700;
+        display: inline;
+    }
+
+    & h3{
+        display: inline;
+        font-size: 16px;
+        padding-left: 12px;
+    }
+
+    &__Header{
+        background-color: rgba(#f25f3a, .3);
+        padding: 4px 0;
+        margin: 0 0 16px 0;
+        width: 110%;
+        border-radius: 1rem;
+    }
+}
