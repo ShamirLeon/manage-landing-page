@@ -1,0 +1,71 @@
+.Testimonials{
+    padding: var(--padding);
+    text-align: center;
+
+    & h2{
+        margin-bottom: 4rem;
+    }
+
+    &__Item{
+        background-color: var(--Very-Light-Gray);
+        padding: 54px 16px 16px;
+        position: relative;
+        max-width: 370px;
+        margin: 32px auto;
+        animation: fade-in .5s ease-in-out forwards;
+    }
+
+    &__Photo{
+        width: 20%;
+        position: absolute;
+        top: -34px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+}
+
+.Inputs{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 40px;
+}
+
+.show{
+    opacity: 1 !important;
+}
+
+.radio-btn{
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--Bright-Red);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-btn .checkmark{
+    width: 100%;
+    height: 100%;
+    background-color: var(--Bright-Red);
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.radio-btn input{
+    display: none;
+}
+
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
