@@ -1,3 +1,5 @@
+import Atributtion from "./components/Atributtion/Atributtion";
+import FooterSection from "./components/Footer/Footer";
 import HeroC from "./components/Hero/Hero";
 import NavBar from "./components/NavBar/NavBar";
 import Simplify from "./components/Simplify/Simplify";
@@ -12,6 +14,8 @@ function App() {
       <MainC />
       <Testimonials />
       <Simplify />
+      <FooterSection />
+      <Atributtion />
     </>
   );
 }

@@ -1,0 +1,14 @@
+.Atributtion{
+    padding: 4px 0;
+    font-size: smaller;
+    background-color: var(--Very-Dark-Blue);
+    text-align: center;
+    color: var(--Very-Pale-Red);
+    position: sticky;
+    bottom: 0;
+
+
+    & a{
+        color: var(--Bright-Red);
+    }
+}
