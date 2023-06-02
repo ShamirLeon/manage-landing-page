@@ -1,0 +1,28 @@
+.Simplify{
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 5rem 2rem;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+
+    background-image: url('../../../public/bg-simplify-section-mobile.svg');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-color: var(--Bright-Red);
+
+    &__Title{
+        color: var(--Very-Pale-Red);
+    }
+
+    &__Cta{
+        background-color: var(--Very-Pale-Red);
+        padding: 10px 32px;
+        border-radius: 2rem;
+        color: var(--Bright-Red);
+        font-size: 14px;
+        margin: auto;
+    }
+}
