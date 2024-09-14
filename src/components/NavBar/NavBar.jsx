@@ -11,21 +11,38 @@ const NavBar = () => {
 
   return (
     <nav className="NavBar">
-      <img src={Logo} />
+      <div>
+        <img src={Logo} />
+      </div>
 
       <ul className="NavBar__Menu">
-        <li>Pricing</li>
-        <li>Product</li>
-        <li>About Us</li>
-        <li>Careers</li>
-        <li>Community</li>
+        <li>
+          Pricing
+        </li>
+        <li>
+          Product
+        </li>
+        <li>
+          About
+         Us</li>
+        <li>
+          Careers
+        </li>
+        <li>
+          Community
+        </li>
       </ul>
+
+      <button className="NavBar__Cta">
+        Get Started
+      </button>
 
       <button
         onClick={() => {
           ToggleMenu();
           setMenu(!menu);
         }}
+        className="NavBar__Button"
       >
         {!menu ? <img src={IconHamburger} /> : <img src={IconClose} />}
       </button>

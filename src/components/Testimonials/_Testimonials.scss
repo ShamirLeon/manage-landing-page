@@ -13,6 +13,10 @@
         max-width: 370px;
         margin: 32px auto;
         animation: fade-in .5s ease-in-out forwards;
+        
+        @media screen and (min-width: 768px) {
+            margin: 32px 0;
+        }
     }
 
     &__Photo{
@@ -30,6 +34,10 @@
     justify-content: center;
     gap: 8px;
     margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .show{
@@ -68,4 +76,11 @@
     100% {
       opacity: 1;
     }
+  }
+
+  .Testimonials__Desktop{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 30px;
   }

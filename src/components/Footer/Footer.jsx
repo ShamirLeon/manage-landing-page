@@ -8,10 +8,14 @@ import IconYoutube from "../../assets/images/IconYoutube";
 export default function FooterSection(params) {
   return (
     <footer className="Footer">
-      <form className="Footer__Form">
-        <input type="text" placeholder="Updates in your inbox..." />
-        <button>GO</button>
-      </form>
+      <div>
+        <form className="Footer__Form">
+          <input type="text" placeholder="Updates in your inbox..." />
+          <button>GO</button>
+        </form>
+
+        <span className="Footer__Copiryght">Copiryght 2020. All Rights Reserved</span>
+      </div>
 
       <div className="Footer__MenuContainer">
         <ul>
@@ -41,28 +45,49 @@ export default function FooterSection(params) {
           </li>
         </ul>
       </div>
-      <div className="Footer__Social">
-        <a href="https://facebook.com" target="_blank">
-          <IconFacebook />
-        </a>
-        <a href="https://instagram.com" target="_blank">
-          <IconInstagram />
-        </a>
-        <a href="https://twitter.com" target="_blank">
-          <IconTwitter />
-        </a>
-        <a href="https://pinterest.com" target="_blank">
-          <IconPinterest />
-        </a>
-        <a href="https://youtube.com" target="_blank">
-          <IconYoutube />
+      <div className="Footer__Social__container">
+        <div className="Footer__Social">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconFacebook />
+          </a>
+          <a
+            href="https://youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconYoutube />
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconTwitter />
+          </a>
+          <a
+            href="https://pinterest.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconPinterest />
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconInstagram />
+          </a>
+        </div>
+
+        <a href="#" className="Footer__Logo">
+          <LogoWhite />
         </a>
       </div>
-
-      <a href="#" className="Footer__Logo">
-        <LogoWhite />
-      </a>
-
       <span>Copiryght 2020. All Rights Reserved</span>
     </footer>
   );

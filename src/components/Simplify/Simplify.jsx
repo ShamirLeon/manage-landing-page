@@ -1,4 +1,4 @@
-export default function Simplify(params) {
+export default function Simplify() {
     return(
         <section className="Simplify">
             <h2 className="Simplify__Title">

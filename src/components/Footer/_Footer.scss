@@ -56,6 +56,12 @@
         align-items: center;
         justify-content: center;
         gap: 2rem;
+
+        &__container{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
     }
 
     &__Logo, & span{
@@ -65,5 +71,42 @@
     & span{
         font-size: 12px;
         color: var(--Very-Light-Gray);
+    }
+
+    &__Copiryght{
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row-reverse;
+        padding-inline: 140px;
+        gap: 100px;
+
+        &__MenuContainer{
+            padding: 0;
+            justify-content: start;
+            gap: 12rem;
+        }
+
+        &__Social{
+            gap: 1rem;
+            &__container {
+                flex-direction: column-reverse;
+                justify-content: space-between;
+            }      
+        }
+
+        &__Logo{
+            margin: 0;
+        }
+
+
+        &__Copiryght{
+            display: block;
+            width: 100%;
+            text-align: right;
+            margin: 60px 0 !important;
+        }
+
     }
 }
